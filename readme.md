@@ -1,11 +1,6 @@
 I create this repository to learn HTML.
 I will get it step by step:
 
-作者：暗灭
-链接：https://www.zhihu.com/question/30180100/answer/131071110
-来源：知乎
-著作权归作者所有，转载请联系作者获得授权。
-
 1. 2个小时的时间去看html
 就学会<html><head><body><div><lable><input><p><input>就够了
 
@@ -65,3 +60,8 @@ I will get it step by step:
 24.花48个小时的时间去完成一个完整的PC端
 
 25.花48个小时的时间去完成一个完整的H5
+
+> 作者：暗灭
+> 链接：https://www.zhihu.com/question/30180100/answer/131071110
+> 来源：知乎
+> 著作权归作者所有，转载请联系作者获得授权。
