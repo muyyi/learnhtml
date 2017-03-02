@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<style>
+	*{
+		margin:0;
+		padding: 0;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	li{list-style-type: none;color:#3498db;}
+	a{text-decoration: none;}
+	body{background: rgb(241,241,241);margin: auto;}
+	#login{margin: 120px auto;width: 20%;font-size: 14px;}
+	.avatar{width: 100px;height: 100px;border-radius: 50px;background-image: url('avatar.jpg');background-size: 100px 100px;margin: 20px auto;}
+	#login_form{background-color: #fff;padding: 20px;margin-bottom: 20px;}
+	#login_form input#txt_name,input#txt_pw{display: block;padding: 6px 12px;width: 100%;border: 1px solid #ccc;}
+	input#txt_pw{margin: 20px 0;}
+	a#findpw{float: right;}
+	#login_form input#btn_login{display: block;margin: 20px auto 0;background-color: #3498db;padding: 5px;border-radius: 5px;color:#fff;text-align: center;width: 100%;border:1px solid #3498db;cursor: pointer;}	
+	</style>
+	<title>登陆和注册</title>
+</head>
+<body>
+	<div class="content">
+		<div id="login">
+			<div class="avatar"></div>
+			<div id="login_form" class="a-center">
+				<form action="#" method="post">
+					<input type="text" id="txt_name" name="uname" placeholder="用户名">
+					<input type="password" id="txt_pw" name="upw" placeholder="密码">
+					<input type="checkbox" value="save"  name="is_save">记住我的登陆信息
+					<a id="findpw" href="#">忘记密码？</a>
+					<input type="submit" id="btn_login" value="登陆">
+				</form>
+			</div>
+		<p>还没有账号？立即<a href="#">注册</a></p>
+		</div>
+	</div>	
+</body>
+</html>

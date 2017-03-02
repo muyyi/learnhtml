@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>center</title>
+	<style>.a-center{margin: auto;position:absolute;top:0;left:0;right:0;bottom:0;overflow: auto;}
+	#box1{width: 600px;height: 400px;background-color: #16a085;position: relative;margin: auto;}
+	#box2{width: 300px;height: 200px;background-color: #1abc9c;color: white;padding: 20px;}
+	.code{color:black;background-color:white;}
+	.title{font-weight: bold;}
+	.a-center-fixed{position:fixed;z-index:999;}
+	.a-center-right{left:auto;right:0;text-align:right;}
+	.a-center-responsive{width: 50%;height: 50%;max-width: 400px;min-width: 200px;}
+	.is-center{margin-left: -160px;margin-top: -110px;top:50%;left:50%;position: absolute;}
+	/*160=(300+20)/2*/
+	/*p{text-align: center;}*/
+	</style>
+
+</head>
+<body>
+	<div id="box1">
+		<div id="box2" class="is-center">
+			<p class="title">容器内的绝对居中</p>
+			<p>父容器使用了<span class="code">position:relative</span></p>
+			<p>实现水平和垂直的绝对居中</p>
+		</div>
+	</div>
+</body>
+</html>
