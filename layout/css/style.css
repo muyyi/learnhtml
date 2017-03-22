@@ -1,0 +1,77 @@
+/*初始化配置*/
+* {
+	margin: 0;
+	padding: 0;
+	-wibkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+		    box-sizing:border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*预设其他模块的占位(以空白div代替)*/
+div.header{
+	height: 50px;
+	width: 100%;
+	margin-bottom: 5px;
+	border: 1px solid #ccc;
+}
+
+div.side{
+	float: left;
+	height: 610px;
+	width: 20%;
+	margin: 5px;
+	border: 1px solid #ccc;
+}
+
+/*自定义配置*/
+.list{
+	float: right;
+	width: 75%;
+	padding: 10px 10% 20px 0px;
+	border-bottom: 1px solid #ccc;
+}
+
+.list>header{
+	font-size: 24px;
+	font-size: 2.4rem;
+	color:#34495e;
+	padding: 0px 10px 5px;
+	border-bottom: 1px solid #ccc;
+}
+
+.list>header>span{
+	color: #bfc1c3
+}
+
+.list ul{
+	margin-top: 20px;
+	list-style:none;
+	overflow: auto;
+}
+
+.list ul li{
+	float: left;
+	width: 20%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.list li>img{
+	width: 64px;
+	height: 64px;
+	margin:  5px auto;
+	display: block;
+}
+
+.list header.sub-list{
+	clear:both;
+	margin-top: 20px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>clear</title>
+	<style>.news{background-color: gray;border: 1px solid black;}
+	.news img{float: left;}
+	.news p{float: right;}
+	/*清除浮动的第一种方式*/
+	/*.clear{clear:both;}*/
+	/*清除浮动的第二种方式*/
+	/*.news{overflow:auto;}*/
+	/*清除浮动的第三种方式(推荐使用)，其实就是第一种方式的变种，通过新增clear:both的后续空元素来清除浮动*/
+	.clear-fix:after{
+		/*理论上这里随便输什么都可以，因为会被隐藏，但输入空元素的好处是不会导致父容器扩大，因为即时不可见，依旧占地方。*/
+		content:"";
+		display: block;
+		clear:both;
+		visibility:hidden;
+	}
+	.clear-fix{
+		/*触发has-*/
+		zoom: 1;
+	}
+	</style>
+</head>
+<body>
+	<div class="news clear-fix">
+		<img src="avatar.jpg" alt="新闻图片">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, dolores.</p>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
