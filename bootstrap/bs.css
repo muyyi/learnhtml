@@ -15,6 +15,17 @@ body{
 
 
 /*bootstrap*/
+/*grid*/
+.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12,
+.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12,
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12,
+.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12
+{
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
 
 .container{
 	padding-left: 15px;
@@ -39,14 +50,6 @@ body{
 	clear:both;
 }
 
-div[class^="col-"]{
-	/*如果浮动非替换元素，则要指定一个明确的宽度；否则，它们会尽可能地窄。
-	不应该将float写在这里，会导致小屏幕下响应式失效的问题*/
-	/*float: left;*/
-	position: relative;
-	padding-left: 15px;
-	padding-right: 15px;
-}
 
 /*type*/
 h1,
@@ -153,25 +156,6 @@ textarea.form-control{
 	cursor:pointer;
 }
 
-.btn{
-	display: inline-block;
-	padding: 6px 12px;
-	height: 36px;
-	border: 1px solid #ccc;
-	font-size: 14px;
-	line-height: 20px;
-	border-radius: 4px;
-	text-align: center;
-	cursor: pointer;
-}
-
-.btn-default{
-	background: #fff;
-}
-
-.btn-default:hover{
-	background-color: #e6e6e6;
-}
 
 .input-group div[class^="input-group-"]{
 	display: inline-block;
@@ -187,14 +171,6 @@ textarea.form-control{
 	background: #eee;
 }
 
-.btn-primary{
-	background: #3498DB;
-	color:white;
-}
-
-.btn-primary:hover{
-	background: #2980B9;
-}
 
 .form-horizontal .form-group{
 	margin-left: -15px;
@@ -203,17 +179,25 @@ textarea.form-control{
 	overflow: auto;
 }
 
-.horizontal label{
+.form-horizontal label{
 	text-align: right;
-	line-height: 36px;
+	font-size: 14px;
+	/*7=6+1*/
+	padding-top: 7px;
 }
 
+input.disabled,
+select.disabled,
+button.disabled,
+.disabled input,
+.disabled select,
+.disabled button,
 .checkbox.disabled label{
 	cursor: not-allowed;
 }
 
-.disabled input{
-	cursor: not-allowed;
+input.disabled{
+	background: #ddd;
 }
 
 .checkbox-inline,
@@ -226,6 +210,62 @@ textarea.form-control{
 .form-control-static{
 	display: inline-block;
 	margin-top:0px;
+}
+
+.focusedInput{
+	border: 1px solid #1ABC9C;
+	box-shadow:0 0 8px #1ABC9C;
+}
+
+.help-block{
+	display: block;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	color: #737373;
+}
+
+.has-success{
+	color: #1ABC9C;
+}
+
+.has-success input{
+	border: 1px solid #1ABC9C;
+}
+
+.form-control-feedback{
+	position: absolute;
+}
+
+.input-sm,
+.form-group-sm input,
+.form-group-sm select,
+.form-group-sm button
+{
+	height: 30px;
+	font-size: 12px;
+	line-height: 1.5;
+	padding: 5px 10px;
+}
+
+.input-lg,
+.form-group-lg input,
+.form-group-lg select,
+.form-group-lg button{
+	height: 46px;
+	font-size: 18px;
+	line-height: 1.33;
+	padding: 10px 16px;
+}
+
+.form-group-sm label{
+	font-size: 12px;
+	padding-top: 6px;
+}
+
+.form-group-lg label{
+	font-size: 18px;
+	/*11= 10(padding-top)+1(border-top)*/
+	padding-top: 11px;
 }
 
 /*media*/
@@ -283,6 +323,35 @@ div[class^="col-xs"]{
 	width: 100%;
 }
 
+/*button*/
+.btn{
+	display: inline-block;
+	height: 36px;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.btn-default{
+	background: #fff;
+}
+
+.btn-default:hover{
+	background-color: #e6e6e6;
+}
+
+.btn-primary{
+	background: #3498DB;
+	color:white;
+}
+
+.btn-primary:hover{
+	background: #2980B9;
+}
 
 /*sm*/
 @media(min-width: 768px){
@@ -290,55 +359,63 @@ div[class^="col-xs"]{
 		width: 750px;
 	}
 
-	div[class^="col-"]{
-		float: left;
-	}
-
 	.col-sm-1{
+		float: left;
 		width: 8.33%;
 	}
 
 	.col-sm-2{
+		float: left;
 		width: 16.66%;
 	}
 
 	.col-sm-3{
+		float: left;
 		width: 25%;
 	}
 
 	.col-sm-4{
+		float: left;
 		width: 33.33%;
 	}
 
 	.col-sm-5{
+		float: left;
 		width: 41.66%;
 	}
 
 	.col-sm-6{
+		float: left;
 		width: 50%;
 	}
 
 	.col-sm-7{
+		float: left;
 		width: 58.33%;
 	}
 
 	.col-sm-8{
+		float: left;
 		width: 66.66%;
 	}
 
 	.col-sm-9{
+		float: left;
 		width: 75%;
 	}
 
 	.col-sm-10{
+		float: left;
 		width: 83.33%;
 	}
 
 	.col-sm-11{
+		float: left;
 		width: 91.66%;
 	}
 
 	.col-sm-12{
+		float: left;
 		width: 100%;
 	}
 }
@@ -500,55 +577,63 @@ div[class^="col-xs"]{
 		width: 1170px;
 	}
 
-	div[class^="col-"]{
-		float: left;
-	}
-
 	.col-lg-1{
+		float: left;
 		width: 8.33%;
 	}
 
 	.col-lg-2{
+		float: left;
 		width: 16.66%;
 	}
 
 	.col-lg-3{
+		float: left;
 		width: 25%;
 	}
 
 	.col-lg-4{
+		float: left;
 		width: 33.33%;
 	}
 
 	.col-lg-5{
+		float: left;
 		width: 41.66%;
 	}
 
 	.col-lg-6{
+		float: left;
 		width: 50%;
 	}
 
 	.col-lg-7{
+		float: left;
 		width: 58.33%;
 	}
 
 	.col-lg-8{
+		float: left;
 		width: 66.66%;
 	}
 
 	.col-lg-9{
+		float: left;
 		width: 75%;
 	}
 
 	.col-lg-10{
+		float: left;
 		width: 83.33%;
 	}
 
 	.col-lg-11{
+		float: left;
 		width: 91.66%;
 	}
 
 	.col-lg-12{
+		float: left;
 		width: 100%;
 	}
 }

@@ -146,9 +146,7 @@
 							<label class="radio-inline disabled"><input type="radio" name="my-radio-inline">3</label>
 						</form>
 					</div>
-				</div>
 
-				<div class="example">
 					<h3>下拉列表（select）</h3>
 					<p>注意，很多原生选择菜单 - 即在 Safari 和 Chrome 中 - 的圆角是无法通过修改 border-radius 属性来改变的。</p>
 					<div class="example-box">
@@ -162,24 +160,130 @@
 					</div>
 				</div>
 
-				<div class="example">
-					<h3>静态控件</h3>
-					<p>如果需要在表单中将一行纯文本和 &lt;label&gt; 元素放置于同一行，为 &lt;p&gt; 元素添加 .form-control-static 类即可。</p>
-					<div class="example-box">
-						<form action="" class="form-horizontal">
-							<div class="form-group">
-								<label for="" class="col-md-2">Email</label>
-								<div class="col-md-9">
-									<p class="form-control-static">email@example.com</p>
-								</div>
+			<div class="example">
+				<h2>静态控件</h2>
+				<p>如果需要在表单中将一行纯文本和 &lt;label&gt; 元素放置于同一行，为 &lt;p&gt; 元素添加 .form-control-static 类即可。</p>
+				<div class="example-box">
+					<form action="" class="form-horizontal">
+						<div class="form-group">
+							<label for="" class="col-md-2">Email</label>
+							<div class="col-md-9">
+								<p class="form-control-static">email@example.com</p>
 							</div>
-						</form>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+			<div class="example">
+				<h2>焦点状态</h2>
+				<p>我们将某些表单控件的默认 outline 样式移除，然后对 :focus 状态赋予 box-shadow 属性。</p>
+				<div class="example-box">
+					<div class="form-group"><input type="text" class="form-control focusedInput"></div>
+				</div>
+			</div>
+
+			<div class="example">
+				<h2>禁用状态</h2>
+				<p>为输入框设置 disabled 属性可以禁止其与用户有任何交互（焦点、输入等）。被禁用的输入框颜色更浅，并且还添加了 not-allowed 鼠标状态。</p>
+				<div class="example-box">
+					<div class="form-group"><input type="text" class="form-control disabled" placeholder="you can't input"></div>
+				</div>
+			</div>
+
+			<div class="example">
+				<h2>被禁用的fieldset</h2>
+				<p>为&lt;fieldset&gt; 设置 disabled 属性,可以禁用 &lt;fieldset&gt; 中包含的所有控件。</p>
+				<div class="example-box">
+					<fieldset class="disabled">
+						<div class="form-group"><label for="">Disabled input</label><input type="text" class="form-control"></div>
+						<div class="form-group"><label for="">Disabled select menu</label><select name="" id="" class="form-control">
+								<option value="">1</option>
+								<option value="">2</option>
+								<option value="">3</option>
+							</select>
+						</div>
+						<div class="form-group checkbox"><label for="">
+								<input type="checkbox">can't selected
+							</label></div>
+						<button class="btn btn-primary">btn-disabled</button>
+					</fieldset>
+				</div>
+			</div>
+
+			<div class="example">
+				<h2>添加额外的图标</h2>
+				<p>你还可以针对校验状态为输入框添加额外的图标。只需设置相应的 .has-feedback 类并添加正确的图标即可。</p>
+				<p>反馈图标（feedback icon）只能使用在文本输入框 &lt;input class="form-control"&gt; 元素上。</p>
+				<span class="help-block">因为这里还没有导入glyphicon字体，暂时跳过，等后续写到图标再补上</span>
+				<div class="example-box">
+					<div class="form-group has-success has-feedback">
+						<label for="">Input with success</label>
+						<input type="text" class="form-control">
+						<span class="glyphicon glyghicon-ok form-control-feedback"></span>
 					</div>
 				</div>
+			</div>
 
-				
+			<div class="example">
+				<h2>控件尺寸</h2>
+				<p>通过 .input-lg 类似的类可以为控件设置高度，通过 .col-lg-* 类似的类可以为控件设置宽度。</p>
+				<h3>高度尺寸</h3>
+				<p>创建大一些或小一些的表单控件以匹配按钮尺寸。</p>
+				<div class="example-box">
+					<form action="">
+						<div class="form-group">
+							<input type="text" class="form-control input-sm" placeholder="small input">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="default input">
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg" placeholder="large input">
+						</div>
+						<div class="form-group">
+							<select name="" id="" class="form-control input-sm">
+								<option value="">1</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<select name="" id="" class="form-control">
+								<option value="">1</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<select name="" id="" class="form-control input-lg">
+								<option value="">1</option>
+							</select>
+						</div>
+					</form>
+				</div>
 
+				<h3>水平排列的表单组的尺寸</h3>
+				<p>通过添加 .form-group-lg 或 .form-group-sm 类，为 .form-horizontal 包裹的 label 元素和表单控件快速设置尺寸。</p>
+				<div class="example-box">
+					<form action="" class="form-horizontal">
+						<div class="form-group form-group-sm">
+							<label class="col-sm-2" for="">input-sm</label>
+							<div class="col-sm-10"><input type="text" class="form-control" placeholder="input-sm"></div>
+						</div>
+						<div class="form-group form-group-lg">
+							<label class="col-sm-2" for="">input-lg</label>
+							<div class="col-sm-10"><input type="text" class="form-control" placeholder="input-lg"></div>
+						</div>
+					</form>
+				</div>
 
+				<h3>调整列（column）尺寸</h3>
+				<p>用栅格系统中的列（column）包裹输入框或其任何父元素，都可很容易的为其设置宽度。</p>
+				<div class="example-box">
+					<div class="row">
+						<div class="col-xs-2"><input type="text" class="form-control" placeholder=".col-xs-2"></div>
+						<div class="col-xs-3"><input type="text" class="form-control" placeholder=".col-xs-3"></div>
+						<div class="col-xs-4"><input type="text" class="form-control" placeholder=".col-xs-4"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
