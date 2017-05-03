@@ -45,3 +45,107 @@
 	padding: 0;
 	list-style-type:none;
 }
+
+.example-box .btn{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*color*/
+
+.color{
+	overflow: auto;
+}
+
+.color div{
+	float: left;
+	width: 140px;
+	height: 140px;
+	margin: 10px;
+	text-align: center;
+	color: #fff;
+	/*文字居中对齐*/
+	line-height: 140px;
+	border-radius: 6px;
+}
+
+.color.gray .gray-darker{
+	background: #222;
+}
+
+.color.gray .gray-dark{
+	background: #333;
+}
+
+.color.gray .gray{
+	background: #555;
+}
+
+.color.gray .gray-light{
+	background: #777;
+}
+
+.color.gray .gray-lighter{
+	background: #eee;
+}
+
+.color.brand .brand-primary{
+	background: #337ab7;
+}
+
+.color.brand .brand-success{
+	background: #5cb85c;
+}
+
+.color.brand .brand-info{
+	background: #5bc0de;
+}
+
+.color.brand .brand-warning{
+	background: #f0ad4e;
+}
+
+.color.brand .brand-danger{
+	background: #d9534f;
+}
+
+.color.brand.active .brand-primary{
+	background: #286090;
+}
+
+.color.brand.active .brand-success{
+	background: #449d44;
+}
+
+.color.brand.active .brand-info{
+	background: #31b0d5;
+}
+
+.color.brand.active .brand-warning{
+	background: #ec971f;
+}
+
+.color.brand.active .brand-danger{
+	background: #c9302c;
+}
+
+.flat-ui-turquoise{background: #1abc9c;} 
+.flat-ui-greensea{background: #16a085;} 
+.flat-ui-emerland{background: #2ecc71;} 
+.flat-ui-nephritis{background: #27ae60;} 
+.flat-ui-peterriver{background: #3498db;} 
+.flat-ui-belizehole{background: #2980b9;} 
+.flat-ui-amethyst{background: #9b59b6;} 
+.flat-ui-wisteria{background: #8e44ad;} 
+.flat-ui-wetasphalt{background: #34495e;} 
+.flat-ui-midnightblue{background: #2c3e50;} 
+.flat-ui-sunflower{background:#f1c40f;} 
+.flat-ui-orange{background:#f39c12;} 
+.flat-ui-carrot{background:#e67e22;} 
+.flat-ui-pumpkin{background:#d35400;} 
+.flat-ui-alizarin{background:#e74c3c;} 
+.flat-ui-pomegranate{background:#c0392b;} 
+.flat-ui-clouds{background:#ecf0f1;} 
+.flat-ui-silver{background:#bdc3c7;} 
+.flat-ui-concrete{background:#95a5a6;} 
+.flat-ui-asbestos{background:#7f8c8d;} 
