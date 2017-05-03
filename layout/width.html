@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关于子元素宽度100%的测试</title>
+	<style>
+	.parent{
+		width: 400px;
+		height: 300px;
+		background: #95A5A6;
+		border: 1px solid #BDC3C7;
+		padding: 10px;
+		float: left;
+		margin-right: 50px;
+	}
+	.child{
+		width: 100%;
+		height: 50px;
+		background: #7F8C8D;
+		margin-bottom: 20px;
+	}
+	.padding{
+		padding: 10px;
+	}
+	.margin{
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	.box{
+		-moz-box-sizing:border-box;
+		-wibkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.box-margin{
+		height: 50px;
+		background: #7F8C8D;
+		margin-bottom: 20px;
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child"></div>
+		<div class="child padding"></div>
+		<div class="child margin"></div>
+		<div class="box-margin"></div>
+	</div>
+
+	<div class="parent box">
+		<div class="child box"></div>
+		<div class="child box padding"></div>
+		<div class="child box margin"></div>
+		<div class="box box-margin"></div>
+	</div>
+</body>
+</html>

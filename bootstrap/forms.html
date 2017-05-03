@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="../normalize.css">
+	<link rel="stylesheet" href="bs.css">
+	<link rel="stylesheet" href="style.css">
+	<title>表单</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-md-9">
+				<h1>表单</h1>
+				<div class="example">
+					<h2>基本实例</h2>
+					<p>单独的表单控件会被自动赋予一些全局样式。所有设置了 .form-control 类的 &lt;input&gt;、&lt;textarea&gt; 和 &lt;select&gt; 元素都将被默认设置宽度属性为 width: 100%;。 将 label 元素和前面提到的控件包裹在 .form-group 中可以获得最好的排列。</p>
+					<div class="example-box">
+						<form action="">
+							<div class="form-group">
+								<label for="email">Email address</label>
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="password">Password</label>
+								<input type="password" class="form-control" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="file">File input</label>
+								<input type="file">
+							</div>
+							<div class="form-group">
+								<!-- <label for="checkbox"><input type="checkbox">Check me out</label> -->
+								<input type="checkbox">Check me out
+							</div>
+							<button class="btn btn-default">Submit</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="example">
+					<h2>内联表单</h2>
+					<p>为 <code>&lt;form&gt;</code> 元素添加 .form-inline 类可使其内容左对齐并且表现为 inline-block 级别的控件。只适用于视口（viewport）至少在 768px 宽度时（视口宽度再小的话就会使表单折叠）。</p>
+					<div class="example-box">
+						<form action="" class="form-inline">
+							<div class="form-group">
+								<label for="email">email</label>
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="password">password</label>
+								<input type="password" class="form-control" placeholder="Password">
+							</div>
+							<button class="btn btn-default">Send invitation</button>
+						</form>
+					</div>
+
+					<div class="example-box">
+						<form action="" class="form-inline">
+							<div class="form-group"><input class="form-control" type="text" placeholder="email"></div>
+							<div class="form-group"><input class="form-control" type="password" placeholder="password"></div>
+							<div class="form-group"><input type="checkbox">Check me out</div>
+							<button class="btn btn-default">Send</button>
+						</form>
+					</div>
+
+					<div class="example-box">
+						<form action="" class="form-inline">
+							<div class="form-group">
+								<div class="input-group">
+									<div class="input-group-addon">$</div>
+									<input type="text" class="form-control">
+									<div class="input-group-addon">.00</div>
+								</div>
+							</div>
+							<button class="btn btn-primary">Transfer cash</button>
+						</form>
+					</div>
+				</div>
+
+				<div class="example">
+					<h2>水平排列的表单</h2>
+					<p>通过为表单添加 .form-horizontal 类，并联合使用 Bootstrap 预置的栅格类，可以将 &lt;label&gt; 标签和控件组水平并排布局。这样做将改变 .form-group 的行为，使其表现为栅格系统中的行（row），因此就无需再额外添加 .row 了。</p>
+					<div class="example-box">
+						<form action="" class="form-horizontal">
+							<div class="form-group">
+								<label for="" class="col-md-2" placeholder="Email">Email</label>
+								<div class="col-md-10"><input type="text" class="form-control" placeholder="Email"></div>
+							</div>
+							<div class="form-group">
+								<label for="" class="col-md-2">Password</label>
+								<div class="col-md-10"><input type="password" class="form-control" placeholder="Password"></div>
+							</div>
+							<div class="form-group">
+								<div class="col-md-offset-2 col-md-10">		
+									<button class="btn btn-default">Sign in</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<div class="example">
+					<h2>被支持的控件</h2>
+					<p>表单布局实例中展示了其所支持的标准表单控件。</p>
+					<h3>输入框</h3>
+					<p>包括大部分表单控件、文本输入域控件，还支持所有 HTML5 类型的输入控件</p>
+					<div class="example-box">
+						<form action=""><input type="text" class="form-control" placeholder="Text input"></form>
+					</div>
+
+					<h3>文本域</h3>
+					<p>支持多行文本的表单控件。可根据需要改变 rows 属性。</p>
+					<div class="example-box">
+						<form action="">
+							<textarea rows="3" class="form-control" placeholder="textarea"></textarea>
+						</form>
+					</div>
+
+					<h3>多选和单选框</h3>
+					<p>多选框（checkbox）用于选择列表中的一个或多个选项，而单选框（radio）用于从多个选项中只选择一个。</p>
+					<h4>默认外观（堆叠在一起）</h3>
+					<div class="example-box">
+						<div class="checkbox"><label><input type="checkbox">Option one is this and that&mdash;be sure to include why it's great</label></div>
+						<div class="checkbox disabled"><label><input type="checkbox">Option can not selected</label></div>
+						<div class="radio">
+							<label><input type="radio" name="myradio" id="radio1" value="op1" checked>Option one is this and that&mdash;be sure to include why it's great</label>
+						</div>
+						<div class="radio">
+							<label><input type="radio" name="myradio" id="radio2" value="op2">Option two can be something else and selecting it will deselect option one</label>
+						</div>
+						<div class="radio disabled"><label><input type="radio" name="myradio" id="radio3" value="op3"></label>Option three is disabled</div>
+					</div>
+
+					<h3>内联单选和多选框</h3>
+					<p>通过将 .checkbox-inline 或 .radio-inline 类应用到一系列的多选框（checkbox）或单选框（radio）控件上，可以使这些控件排列在一行。</p>
+					<div class="example-box">
+						<form>
+							<label class="checkbox-inline"><input type="checkbox">1</label>
+							<label class="checkbox-inline"><input type="checkbox">2</label>
+							<label class="checkbox-inline disabled"><input type="checkbox">3</label>
+						</form>
+						<form>
+							<label class="radio-inline"><input type="radio" name="my-radio-inline">1</label>
+							<label class="radio-inline"><input type="radio" name="my-radio-inline">2</label>
+							<label class="radio-inline disabled"><input type="radio" name="my-radio-inline">3</label>
+						</form>
+					</div>
+				</div>
+
+				<div class="example">
+					<h3>下拉列表（select）</h3>
+					<p>注意，很多原生选择菜单 - 即在 Safari 和 Chrome 中 - 的圆角是无法通过修改 border-radius 属性来改变的。</p>
+					<div class="example-box">
+						<select class="form-control">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="example">
+					<h3>静态控件</h3>
+					<p>如果需要在表单中将一行纯文本和 &lt;label&gt; 元素放置于同一行，为 &lt;p&gt; 元素添加 .form-control-static 类即可。</p>
+					<div class="example-box">
+						<form action="" class="form-horizontal">
+							<div class="form-group">
+								<label for="" class="col-md-2">Email</label>
+								<div class="col-md-9">
+									<p class="form-control-static">email@example.com</p>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+				
+
+
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简单的msg弹框</title>
+	<style>
+	.msg-bg{
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: #000;
+		z-index: 10;
+		opacity:0.7;
+	}
+	.msg-content{
+		display: none;
+		/*position: fixed;*/
+		height: 300px;
+		width: 500px;
+/*		top:50%;
+		left: 50%;
+		margin-top: -150px;
+		margin-left: -250px;*/	
+		background: #fff;
+		z-index: 11;
+	}
+	/*用绝对居中代替上面的居中试试*/
+	.ab-center{
+		position: absolute;
+		overflow: auto;
+		top:0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+	</style>
+</head>
+<body>
+	<button class="click">点我试试</button>
+	<button class="click1">再点我试试</button>
+	<div class="msg-bg"></div>
+	<div class="msg-content ab-center">
+		<button class="close">点击关闭弹窗</button>
+		<button class="close1">关闭弹窗</button>
+	</div>	
+	<!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="http://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.click').click(function(){
+			$('.msg-bg').show();
+			$('.msg-content').show();
+		});
+		$('.close').click(function(){
+			$('.msg-bg').hide();
+			$('.msg-content').hide();
+		});
+		$('.click1').click(function(){
+			$('.msg-bg').fadeIn(200);
+			$('.msg-content').fadeIn(400);
+		});
+		$('.close1').click(function(){
+			$('.msg-bg').fadeOut(800);
+			$('.msg-content').fadeOut(800);
+		});
+	});
+	</script>
+</body>
+</html>

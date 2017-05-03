@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>很cool的弹窗</title>
+	<style>
+	.msg-mask{
+		z-index: 100;
+		position:fixed;
+		display: none;
+		top:0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: black;
+		opacity: .7;
+	}
+
+	.msg-box{
+		z-index: 101;
+		display: none;
+		width: 300px;
+		height: 200px;
+		background: white;
+		padding: 20px;
+		text-align: center;
+	}
+
+	.ab-center{
+		position: absolute;
+		margin: auto;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		overflow: auto;
+	}
+
+	.msg-btn{
+		display: block;
+		width: 40%;
+		height: 40px;
+		text-align: center;
+		float: left;
+		margin-right: 10%;
+	}
+
+/*	.btn-defalt{
+
+	}*/
+
+	.btn-disable{
+		background-color: gray;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<button id="button-1">confirm</button>
+	<div class="msg-mask"></div>
+	<div class="msg-box msg-confirm ab-center">
+		<h3>提示信息</h3>
+		<p>提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容提示内容</p>
+		<button class="msg-btn btn-disable">操作</button>
+		<button class="msg-btn btn-defalt">取消</button>
+	</div>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+	<script>
+		$(function(){
+			$('#button-1').click(function(){
+				$('.msg-mask').show();
+				$('.msg-box').show();
+			});
+		});
+	</script>
+</body>
+</html>

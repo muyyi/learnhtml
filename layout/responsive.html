@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/normalize.css">
+	<style>
+	*,
+	*:before,
+	*:after{
+		-moz-box-sizing:border-box;
+		-wibkit-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+	.container{
+		margin:0 auto;
+		width: 90%;
+		max-width: 48rem;
+	}
+	.example{
+		background: #34495E;
+		color: white;
+		text-align: center;
+		padding: 1rem;
+	}
+	.example .row{
+		padding: 1rem;
+		background: #7F8C8D;
+		border: 1px solid #BDC3C7;
+		margin-bottom: 20px;
+	}
+	.example .column span{
+		display: block;
+		padding: 1rem;
+		background: #95A5A6;
+		border: 1px solid white;
+	}
+	.clearfix:after{
+		content: '';
+		display: table;
+		clear:both;
+	}
+	.clearfix{
+		zoom: 1;
+	}
+	@media (min-width:40rem){
+		.column{
+			float: left;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+
+		.column.full{
+			width: 100%;
+		}
+
+		.column.two-three{
+			width: 66.6%;
+		}
+
+		.column.three{
+			width: 33.3%;
+		}
+
+		.column.half{
+			width: 50%;
+		}
+
+		.column.four{
+			width: 25%;
+		}
+
+		.column.flow-opposite{
+			float: right;
+		}
+	}
+	</style>
+	<title>响应式设计简单指南</title>
+</head>
+<body>
+	<div class="container example">
+		<div class="row clearfix">
+			<div class="column full"><span>column full</span></div>
+		</div>
+		<div class="row clearfix">
+			<div class="column half"><span>column half</span></div>
+			<div class="column half"><span>column half</span></div>
+		</div>
+		<div class="row clearfix">
+			<div class="column two-three"><span>column.two-three</span></div>
+			<div class="column three"><span>column.three</span></div>
+		</div>
+		<div class="row clearfix">
+			<div class="column three"><span>column three</span></div>
+			<div class="column three"><span>column three</span></div>
+			<div class="column three"><span>column three</span></div>
+		</div>
+		<div class="row clearfix">
+			<div class="column four flow-opposite"><span>flow-opposite</span></div>
+			<div class="column four"><span>column four</span></div>
+			<div class="column four"><span>column four</span></div>
+			<div class="column four"><span>column four</span></div>
+		</div>
+	</div>
+</body>
+</html>

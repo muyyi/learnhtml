@@ -1,0 +1,47 @@
+/*grid*/
+.example{
+	margin-bottom: 50px;
+}
+
+.example.grid div[class^="col-"]{
+	background: #BDC3C7;
+	border: 1px solid white;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.example .row{
+	margin-bottom: 10px;
+}
+
+.example .parent{
+	background: #7F8C8D !important;
+}
+
+/*type*/
+.example-box{
+	position: relative;
+	border: 1px solid #ccc;
+	padding: 40px 10px 10px;
+	margin: 10px auto;
+}
+
+.example-box:after{
+	content: 'Example';
+	display: block;
+	padding: 5px;
+	background: #ccc;
+	position: absolute;
+	font-size: 12px;
+	font-weight: 700;
+	color: #959595;
+	top: 0px;
+	left: 0px;
+}
+
+.example-box ul{
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
