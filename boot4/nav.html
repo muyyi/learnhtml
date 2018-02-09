@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>nav</h2>
+      <h3>简单的水平导航</h3>
+      <div class="exp">
+        <ul class="nav">
+          <li class="nav-item"><a href="" class="nav-link">导航1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+      </div>
+      <h3>对齐方式</h3>
+      <div class="exp">
+        <ul class="nav">
+          <li class="nav-item"><a href="" class="nav-link">导航1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+        <ul class="nav justify-content-center">
+          <li class="nav-item"><a href="" class="nav-link">导航1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+        <ul class="nav justify-content-end">
+          <li class="nav-item"><a href="" class="nav-link">导航1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+      </div>
+      <h3>垂直导航</h3>
+      <div class="exp">
+        <ul class="nav flex-column">
+          <li class="nav-item"><a href="" class="nav-link">导航1</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+      </div>
+      <h3>选项卡(+下拉菜单)</h3>
+      <div class="exp">
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="" class="nav-link active">导航1</a></li>
+          <li class="nav-item">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">导航2(点击展开)</a>
+            <div class="dropdown-menu">
+              <a href="" class="dropdown-item">子选项1</a>
+              <a href="" class="dropdown-item">子选项2</a>
+              <a href="" class="dropdown-item">子选项3</a>
+            </div>
+          </li>
+          <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+          <li class="nav-item"><a href="" class="nav-link disabled">导航4</a></li>
+        </ul>
+      </div>
+      <h3>胶囊式导航(+导航等宽)</h3>
+      <div class="exp">
+          <ul class="nav nav-pills nav-justified">
+            <li class="nav-item"><a href="" class="nav-link active">导航1</a></li>
+            <li class="nav-item"><a href="" class="nav-link">导航2</a></li>
+            <li class="nav-item"><a href="" class="nav-link">导航3</a></li>
+            <li class="nav-item"><a href="" class="nav-link disabled">disabled不可用</a></li>
+          </ul>
+        </div>
+        <h3>可切换选项卡</h3>
+        <div class="exp">
+        <ul class="nav nav-tabs">
+          <li class="nav-item"><a href="#home" class="nav-link active" data-toggle="tab">主页</a></li>
+          <li class="nav-item"><a href="#product" class="nav-link" data-toggle="tab">产品</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link" data-toggle="tab">关于</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane container fade" id="home">
+            <h2>主页</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, ducimus!</p>
+          </div>
+          <div class="tab-pane container fade" id="product">
+            <h2>产品</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum impedit minus quis nam, illum sequi.</p>
+          </div>
+          <div class="tab-pane container" id="about">
+            <h2>关于</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio deserunt iste sunt voluptate eius earum voluptatem illum, similique amet deleniti.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

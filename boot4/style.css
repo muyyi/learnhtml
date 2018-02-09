@@ -1,0 +1,12 @@
+.exp{
+	/*background: #BDC3C7;*/
+	padding: 15px;
+	margin-bottom: 30px;
+	border: 1px solid #eee;
+
+}
+
+.exp:before{
+/*	content: '实例';
+	color: #3498DB;*/
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+    <h1>表格</h1>
+    <h2>基础表格</h2>
+    <p>Bootstrap4 通过 <span>.table</span> 类来设置基础表格的样式，实例如下:</p>
+    <div class="exp">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>年龄</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>张三</th>
+            <th>男</th>
+            <th>14</th>
+          </tr>
+          <tr>
+            <th>李四</th>
+            <th>男</th>
+            <th>12</th>
+          </tr>
+          <tr>
+            <th>王五</th>
+            <th>男</th>
+            <th>43</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>表格优化</h2>
+    <p>通过 <span>.table-striped</span> 类来设置<span>tbody</span>里的条纹</p>
+    <p><span>.table-bordered</span> 类可以为表格添加边框</p>
+    <p><span>.table-hover</span> 类可以为表格的每一行添加鼠标悬停效果（灰色背景）：</p>
+    <p><span>.table-dark</span> 类可以为表格添加黑色背景：</p>
+    <p><span>.table-responsive</span> 类可以创建响应式表格：</p>
+
+    <div class="exp">
+      <div class="table-responsive-sm">
+        <table class="table table-dark table-striped table-bordered table-hover table-sm">
+          <thead class="thead-darked">
+            <tr>
+              <th>姓名</th>
+              <th>性别</th>
+              <th>年龄</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>张三</th>
+              <th>男</th>
+              <th>14</th>
+            </tr>
+            <tr>
+              <th>李四</th>
+              <th>男</th>
+              <th>12</th>
+            </tr>
+            <tr>
+              <th>王五王五王五王五王五王五王五王五王五王五</th>
+              <th>男</th>
+              <th>43</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

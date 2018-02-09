@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <h2>collapse</h2>
+      <h3>简单实例</h3>
+      <button data-toggle="collapse" data-target="#demo">折叠1</button>
+      <a href="#demo" data-toggle="collapse">折叠2</a>
+      <div id="demo" class="collapse">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, non.</div>
+
+      <h3>手风琴实例</h3>
+      <p>为a加上<code>data-parent</code>，确保所有的选项都在同一个父元素下，这样当展开这个选项的时候，其它选项会自动隐藏</p>
+      <div id="test">
+        <div class="card">
+         <div class="card-header"><a href="#test1" class="card-link" data-toggle="collapse" data-parent="#test">lorem10</a></div>
+         <div class="collapse show" id="test1">
+           <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, similique.
+          </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="card-header"><a href="#test2" class="card-link" data-toggle="collapse" data-parent="#test">lorem20</a></div>
+         <div class="collapse" id="test2">
+           <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nam magni adipisci, minus sint repudiandae totam laudantium! Maxime, sunt repudiandae.
+          </div>
+         </div>
+        </div>
+        <div class="card">
+         <div class="card-header"><a href="#test3" class="card-link" data-toggle="collapse" data-parent="#test">lorem30</a></div>
+         <div class="collapse" id="test3">
+           <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dicta voluptas distinctio laboriosam eos assumenda obcaecati eligendi illum nobis ipsam incidunt facilis odio, molestias accusamus error dignissimos delectus, ullam corrupti.
+          </div>
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/js/bootstrap.js"></script>
+  </body>
+</html>

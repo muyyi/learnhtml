@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,KAAK;EACJ,KAAK,EAHC,IAAI",
+"sources": ["hellosass.scss"],
+"names": [],
+"file": "test.css"
+}
