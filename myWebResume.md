@@ -34,7 +34,7 @@
 
 作为唯一的开发人员，这次我采用了bootstrap4+wordpress，并创新地加入了大量短代码，完成了该响应式网站的制作。项目完成后，公司的领导和同事对该网站赞叹不已。因为他们即使不懂代码，也能方便地在后台编辑发布自己想要的图文效果（可参考产品页面的图文效果）。
 
-[项目网址](http://szhybest.com)（已挂，请访问测试镜像） 
+[项目网址](http://szhybest.com)
 [测试镜像](http:/hybest.muyyi.com)
 
 
@@ -56,7 +56,7 @@
 - Web开发：PHP\*/Node
 - Web框架：Wordpress
 - 前端框架：Bootstrap/Vue\*/HTML5
-- 前端工具：SaSS/LeSS
+- 前端工具：SaSS/LeSS/Webpack
 - 数据库相关：SQL Server/SQLite
 - 版本管理工具：Git
 - 其它技能：Photoshop/Markdown/Python\*/微信公众号/SEO
